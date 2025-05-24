@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+header {
+  background: linear-gradient(90deg, #3b003b, #1a001a);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2em;
+  color: #ff004c;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle, #290029, #0d0d0d);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ff004c;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.personagens {
+  padding: 60px 20px;
+  background-color: #1a001a;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 30px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background: #250025;
+  border: 2px solid #ff004c;
+  border-radius: 12px;
+  cursor: pointer;
+  perspective: 1000px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card:hover, .card.active {
+  transform: scale(1.1);
+  background-color: #4a004a;
+}
+
+.card-inner {
+  padding: 10px;
+}
+
+.historia, .galeria, .contato {
+  padding: 60px 20px;
+}
+
+.historia p, .galeria p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container input, .form-container textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Roboto';
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #ff004c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-container button:hover {
+  background-color: #cc003b;
+}
+
+.carousel-btn {
+  background: none;
+  border: 2px solid #ff004c;
+  color: #ff004c;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: #4a004a;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff004c;
+}
+
+.logo-img {
+  max-height: 60px;
+  max-width: 200px;
+  height: auto;
+  width: auto;
+}
