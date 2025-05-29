@@ -37,7 +37,7 @@
                 <div class="card" onclick="selectPersonagem(0)">
                     <div class="card-inner">
                         <div class="card-front">Ashley</div>
-                        <div class="card-back">Surtada, pirada, borderlinda.</div>
+                        <div class="card-back">DESCRIÇÃO.</div>
                     </div>
                 </div>
                 <div class="card" onclick="selectPersonagem(1)">
@@ -49,7 +49,7 @@
                 <div class="card" onclick="selectPersonagem(2)">
                     <div class="card-inner">
                         <div class="card-front">Pep</div>
-                        <div class="card-back">Meio-bicha.</div>
+                        <div class="card-back">MIMIMI.</div>
                     </div>
                 </div>
             </div>
@@ -77,23 +77,7 @@
             <button>Enviar</button>
         </div>
     </section>
-
-    <script>
-        function scrollCarousel(direction) {
-            const container = document.querySelector('.carousel-container');
-            container.scrollBy({ left: direction * 300, behavior: 'smooth' });
-        }
-
-        function selectPersonagem(index) {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach((card, i) => {
-                if (i === index) {
-                    card.classList.toggle('active');
-                } else {
-                    card.classList.remove('active');
-                }
-            });
-        }
+        <script src="script.js">
     </script>
 </body>
 
