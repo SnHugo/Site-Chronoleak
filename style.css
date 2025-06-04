@@ -169,3 +169,35 @@ h2 {
   height: auto;
   width: auto;
 }
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header .logo {
+    justify-self: center;
+  }
+  .nav-links {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .historia, .galeria, .contato, .personagens {
+    padding: 40px 20px;
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+}
