@@ -170,6 +170,57 @@ h2 {
   width: auto;
 }
 
+
+/* Galeria de Imagens */
+
+.grid-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.02);
+}
+
+
+/* Modal */
+
+.modal {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+.modal img {
+    height: 50%;
+    border-radius: 8px;
+}
+
+.modal.ativo {
+  display: flex;
+}
+
+
 @media (max-width: 768px) {
 
   header {
