@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,90 +8,176 @@
     <title>Chronoleak</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="Chronoleak_light_v_1.png" alt="Logo Chronoleak" class="logo-img">
+                <img src="imagens/Chronoleak_light_v_1.png" alt="Logo Chronoleak" class="logo-img">
             </div>
             <ul class="nav-links">
                 <li><a href="#personagens">Personagens</a></li>
                 <li><a href="#historia">História</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#galeria">Desenvolvimento</a></li>
+                <li><a href="#equipe">Equipe</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Bem-vindo a Chronoleak</h1>
-        <p>Um RPG de turno com drama, escolhas e mistérios no tempo.</p>
+        <img src="imagens/Chronoleak_light_v_1.png" alt="Logo Chronoleak" class="logo-hero">
+        <p>Seja bem vindo a Chronoleak. Nesse jogo, você controla uma jovem garota chamada Ashley e passará por diversos
+            conflitos, desde um simples relacionamento até a busca por vingança. Você deve encontrar uma maneira de
+            voltar no tempo e impedir os acontecimentos que causaram toda a confusão, a qualquer custo.</p>
     </section>
 
     <section id="personagens" class="personagens">
         <h2>Personagens</h2>
-        <div class="carousel">
-            <button class="carousel-btn" onclick="scrollCarousel(-1)">&#10094;</button>
-            <div class="carousel-container">
-                <div class="card" onclick="selectPersonagem(0)">
-                    <div class="card-inner">
-                        <div class="card-front">Ashley</div>
-                        <div class="card-back">DESCRIÇÃO.</div>
+        <div class="carrossel-container">
+            <div class="carrossel">
+
+                <div class="personagem-card">
+                    <div class="personagem-img-container">
+                        <img src="imagens/AshleySiteNew.png" alt="imagem Ashley" class="personagem-img">
+                    </div>
+                    <div class="personagem-info">
+                        <h3>Ashley</h3>
+                        <p>Jovem introvertida de 23 anos, com cabelo castanho e olhos cansados.</p>
                     </div>
                 </div>
-                <div class="card" onclick="selectPersonagem(1)">
-                    <div class="card-inner">
-                        <div class="card-front">Marigold</div>
-                        <div class="card-back">Melhor personagem do jogo wtf.</div>
+
+                <div class="personagem-card">
+                    <div class="personagem-img-container">
+                        <img src="imagens/MarigoldSiteNew.png" alt="imagem Marigold" class="personagem-img">
+                    </div>
+                    <div class="personagem-info">
+                        <h3>Marigold</h3>
+                        <p>Garota radiante e energética de 21 anos, com cabelo curto e loiro.</p>
                     </div>
                 </div>
-                <div class="card" onclick="selectPersonagem(2)">
-                    <div class="card-inner">
-                        <div class="card-front">Pep</div>
-                        <div class="card-back">MIMIMI.</div>
+
+                <div class="personagem-card">
+                    <div class="personagem-img-container">
+                        <img src="imagens/PepSiteNew.png" alt="imagem Pep" class="personagem-img">
+                    </div>
+                    <div class="personagem-info">
+                        <h3>Pep</h3>
+                        <p>Robozinho alegre e tagarela com um curativo no rosto.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-btn" onclick="scrollCarousel(1)">&#10095;</button>
         </div>
     </section>
 
     <section id="historia" class="historia">
         <h2>História do Jogo</h2>
-        <p>Chronoleak mergulha você em um mundo onde o tempo não é linear. A cada decisão, um novo futuro. Descubra
-            segredos, confronte seus traumas e busque a verdade em um universo despedaçado pelo próprio passado.</p>
+        <p>Chronoleak é um jogo de drama e aventura em 3D, baseado em JRPGs, que se passa em um mundo em ruínas, onde as
+            poucas pessoas que se mantém vivas tem de sobreviver à natureza volátil sozinhos ou em pequenas comunidades
+            espalhadas pelo mundo. Após um grande evento conhecido como cataclismo acontecer à vários anos atrás, o
+            mundo entrou em declínio e a raça humana se encontrou ameaçada de extinção, porém uma comunidade se mantém
+            de pé mesmo com as diversas dificuldades do novo mundo. Conhecida como Blume, a cidade que se mantém em pé é
+            também onde conhecemos Ashley, uma jovem garota que viveu sua vida toda na cidade, mas que por um trágico
+            incidente começou sua busca por vingança. Em sua busca, Ashley passará por diversas aventuras e situações
+            complicadas.
+            Chronoleak está sendo produzido pela recente, porém ambiciosa Caramelo Studios, tendo muito carinho por
+            jogos como Eastward e Omori, que foram ótimas inspirações para a criação da história e eventualmente
+            desenvolvimento e arte de Chronoleak. O jogo segue em produção de seu primeiro capítulo, usando ao máximo a
+            ambição e o gosto por desenvolver não apenas um jogo que toque o coração de seus jogadores, mas também uma
+            equipe que cresce forte como uma família.</p>
     </section>
 
     <section id="galeria" class="galeria">
         <h2>Galeria de Desenvolvimento</h2>
-        <p>Em breve: Concept arts, progresso do jogo, bastidores e mais!</p>
-        <div class="grid-galeria">
-            <img src="imagens/imagem-fundo.jpeg" alt="Imagem 1">
-            <img src="imagens/personagem1.jpeg" alt="Imagem 2">
-            <img src="imagens/personagem2.jpeg" alt="Imagem 3">
-            <img src="imagens/personagem3.jpeg" alt="Imagem 4">
-            <img src="imagens/personagem4.jpeg" alt="Imagem 5">
-            <img src="imagens/personagem5.jpeg" alt="Imagem 6">
-            <img src="imagens/personagem6.jpeg" alt="Imagem 7">
-        </div>
-        <div class="modal" id="modal">
-            <img id="modal-img" src="" alt="Imagem Expandida">
+        <div class="dev-timeline">
+            <div class="dev-phase">
+                <h3>Concept Art</h3>
+                <div class="phase-grid">
+                    <img src="imagens/imagem-fundo.jpeg" alt="Concept Art 1">
+                    <img src="imagens/personagem1.jpeg" alt="Concept Art 2">
+                    <img src="imagens/personagem2.jpeg" alt="Concept Art 3">
+                </div>
+            </div>
+
+            <div class="dev-phase">
+                <h3>Protótipo</h3>
+                <div class="phase-grid">
+                    <img src="imagens/personagem3.jpeg" alt="Prototype 1">
+                    <img src="imagens/personagem4.jpeg" alt="Prototype 2">
+                    <img src="imagens/personagem5.jpeg" alt="Prototype 3">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contato" class="contato">
-        <div class="form-container">
-            <h3>Entre em contato</h3>
-            <input type="text" placeholder="Seu nome" />
-            <input type="email" placeholder="Seu email" />
-            <textarea placeholder="Sua mensagem..."></textarea>
-            <button>Enviar</button>
+    <section id="equipe" class="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="team-container">
+            <div class="studio-card">
+                <h3>Caramelo Studios</h3>
+                <p>Uma equipe pequena mas apaixonada, inspirada por jogos como Eastward e Omori. Nosso objetivo é criar
+                    experiências que toquem o coração dos jogadores.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="imagens/felipão.png" alt="Desenvolvedor">
+                <h4>Felipe Quirino</h4>
+                <p>Diretor Criativo</p>
+            </div>
+
+            <div class="team-member">
+                <img src="imagens/perdo.png" alt="Desenvolvedor">
+                <h4>Pedro Henrique</h4>
+                <p>Desenvolvedor</p>
+            </div>
+
+            <div class="team-member">
+                <img src="imagens/eumemo.png" alt="Desenvolvedor">
+                <h4>Hugo Cesar</h4>
+                <p>Desenvolvedor</p>
+            </div>
+
+            <div class="team-member">
+                <img src="imagens/andrezin.png" alt="Desenvolvedor">
+                <h4>André Bruschi</h4>
+                <p>Marketing</p>
+            </div>
+
+            <div class="team-member">
+                <img src="imagens/luzkinhas.png" alt="Desenvolvedor">
+                <h4>Lucas Alexandre</h4>
+                <p>Diretor de Projeto</p>
+            </div>
+
+            <div class="team-member">
+                <img src="imagens/ayumi.jpg" alt="Desenvolvedor">
+                <h4>Ayumi Isabela</h4>
+                <p>Arte Visual</p>
+            </div>
         </div>
     </section>
-        <script src="script.js">
-    </script>
+
+    <section id="contato" class="redes-chronoleak">
+        <h2>Conecte-se</h2>
+        <div class="social-chronoleak">
+            <a href="https://youtube.com" target="_blank" class="chronoleak-btn">
+                <i class="fab fa-youtube" style="color:#ffffff; font-size:32px;"></i>
+                <span class="chronoleak-tooltip">Inscreva-se</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="chronoleak-btn">
+                <i class="fab fa-instagram" style="color:#ffffff; font-size:32px;"></i>
+                <span class="chronoleak-tooltip">Siga-nos</span>
+            </a>
+            <a href="https://x.com/Chronoleak_dev" target="_blank" class="chronoleak-btn">
+                <i class="fab fa-x-twitter" style="color:#ffffff; font-size:32px;"></i>
+                <span class="chronoleak-tooltip">Acompanhe</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,34 +1,33 @@
-        function scrollCarousel(direction) {
-            const container = document.querySelector('.carousel-container');
-            container.scrollBy({ left: direction * 300, behavior: 'smooth' });
-        }
+// Efeito de hover dinâmico
+document.querySelectorAll('.personagem-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.querySelector('.personagem-img').style.transform = 'scale(1.05)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.querySelector('.personagem-img').style.transform = 'scale(1)';
+    });
+});
 
-        function selectPersonagem(index) {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach((card, i) => {
-                if (i === index) {
-                    card.classList.toggle('active');
-                } else {
-                    card.classList.remove('active');
-                }
-            });
-        }
-        
+// Galeria de Imagens (Modal)
+const imagens = document.querySelectorAll('.phase-grid img, .grid-galeria img');
+const modal = document.querySelector('.modal');
+const modalImg = document.querySelector('.modal img');
 
-        // Expandir imagem da grid
+imagens.forEach(img => {
+    img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        modal.classList.add('ativo');
+    });
+});
 
-        const imagens = document.querySelectorAll('.grid-galeria img');
-        const modal = document.getElementById('modal');
-        const modalImagem = document.getElementById('modal-img');
+modal.addEventListener('click', () => {
+    modal.classList.remove('ativo');
+});
 
-
-        imagens.forEach(img => {
-            img.addEventListener('click', () => {
-                modalImagem.src = img.src; 
-                modal.classList.add('ativo');
-            });
-        });
-
-        modal.addEventListener('click', () => {
-            modal.classList.remove('ativo');
-        });
+// Fechar modal com ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('ativo')) {
+        modal.classList.remove('ativo');
+    }
+});
